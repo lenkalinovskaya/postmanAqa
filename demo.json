@@ -1,0 +1,251 @@
+{
+	"info": {
+		"_postman_id": "2ede7b13-b3d1-4b68-a7a7-1da1b28ca9f4",
+		"name": "Vikunja",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21754514"
+	},
+	"item": [
+		{
+			"name": "Get - просмотр команд пользователя - /teams",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthbGlub3ZzY2thamEuZWxlbmFAeWFuZGV4LnJ1IiwiZW1haWxSZW1pbmRlcnNFbmFibGVkIjpmYWxzZSwiZXhwIjoxNjU3NzE5ODA2LCJpZCI6OCwiaXNMb2NhbFVzZXIiOnRydWUsImxvbmciOmZhbHNlLCJuYW1lIjoiIiwidHlwZSI6MSwidXNlcm5hbWUiOiJsZW5rYWxpbm92c2theWFhIn0.YwOim0jojW9AGKHsqMHWYDxpt2uXyXxs4RAtcK1McS8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://try.vikunja.io/api/v1/teams?page=1",
+					"protocol": "https",
+					"host": [
+						"try",
+						"vikunja",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"teams"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT - создание новой команды - /teams",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthbGlub3ZzY2thamEuZWxlbmFAeWFuZGV4LnJ1IiwiZW1haWxSZW1pbmRlcnNFbmFibGVkIjpmYWxzZSwiZXhwIjoxNjU3NzE5ODA2LCJpZCI6OCwiaXNMb2NhbFVzZXIiOnRydWUsImxvbmciOmZhbHNlLCJuYW1lIjoiIiwidHlwZSI6MSwidXNlcm5hbWUiOiJsZW5rYWxpbm92c2theWFhIn0.YwOim0jojW9AGKHsqMHWYDxpt2uXyXxs4RAtcK1McS8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"max_right\":null,\"id\":0,\"name\":\"новая команда\",\"description\":\"\",\"members\":[],\"right\":0,\"created_by\":{\"max_right\":null,\"id\":0,\"email\":\"\",\"username\":\"\",\"name\":\"\",\"created\":\"1970-01-01T00:00:00.000Z\",\"updated\":\"1970-01-01T00:00:00.000Z\",\"settings\":null},\"created\":\"1970-01-01T00:00:00.000Z\",\"updated\":\"1970-01-01T00:00:00.000Z\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://try.vikunja.io/api/v1/teams",
+					"protocol": "https",
+					"host": [
+						"try",
+						"vikunja",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"teams"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT - создание нового лэйбла - /labels",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthbGlub3ZzY2thamEuZWxlbmFAeWFuZGV4LnJ1IiwiZW1haWxSZW1pbmRlcnNFbmFibGVkIjpmYWxzZSwiZXhwIjoxNjU3NzE5ODA2LCJpZCI6OCwiaXNMb2NhbFVzZXIiOnRydWUsImxvbmciOmZhbHNlLCJuYW1lIjoiIiwidHlwZSI6MSwidXNlcm5hbWUiOiJsZW5rYWxpbm92c2theWFhIn0.YwOim0jojW9AGKHsqMHWYDxpt2uXyXxs4RAtcK1McS8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"max_right\":null,\"id\":0,\"title\":\"новый лэйбел\",\"hex_color\":\"e8e8e8\",\"description\":\"\",\"created_by\":{\"max_right\":null,\"id\":0,\"email\":\"\",\"username\":\"\",\"name\":\"\",\"created\":\"1970-01-01T00:00:00.000Z\",\"updated\":\"1970-01-01T00:00:00.000Z\",\"settings\":null},\"list_id\":0,\"text_color\":\"#4a4a4a\",\"created\":\"1970-01-01T03:00:00+03:00\",\"updated\":\"1970-01-01T03:00:00+03:00\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://try.vikunja.io/api/v1/labels",
+					"protocol": "https",
+					"host": [
+						"try",
+						"vikunja",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"labels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT - создание комментария к задаче - /tasks/comments",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthbGlub3ZzY2thamEuZWxlbmFAeWFuZGV4LnJ1IiwiZW1haWxSZW1pbmRlcnNFbmFibGVkIjpmYWxzZSwiZXhwIjoxNjU3NzE5ODA2LCJpZCI6OCwiaXNMb2NhbFVzZXIiOnRydWUsImxvbmciOmZhbHNlLCJuYW1lIjoiIiwidHlwZSI6MSwidXNlcm5hbWUiOiJsZW5rYWxpbm92c2theWFhIn0.YwOim0jojW9AGKHsqMHWYDxpt2uXyXxs4RAtcK1McS8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"max_right\":null,\"id\":0,\"task_id\":13,\"comment\":\"самая самая важная задача\",\"author\":{\"max_right\":null,\"id\":0,\"email\":\"\",\"username\":\"\",\"name\":\"\",\"created\":\"1970-01-01T00:00:00.000Z\",\"updated\":\"1970-01-01T00:00:00.000Z\",\"settings\":null},\"created\":\"1970-01-01T00:00:00.000Z\",\"update\":null,\"updated\":null}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://try.vikunja.io/api/v1/tasks/13/comments",
+					"protocol": "https",
+					"host": [
+						"try",
+						"vikunja",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"tasks",
+						"13",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get - просмотр содержимого списка задач - /lists",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthbGlub3ZzY2thamEuZWxlbmFAeWFuZGV4LnJ1IiwiZW1haWxSZW1pbmRlcnNFbmFibGVkIjpmYWxzZSwiZXhwIjoxNjU3NzE5ODA2LCJpZCI6OCwiaXNMb2NhbFVzZXIiOnRydWUsImxvbmciOmZhbHNlLCJuYW1lIjoiIiwidHlwZSI6MSwidXNlcm5hbWUiOiJsZW5rYWxpbm92c2theWFhIn0.YwOim0jojW9AGKHsqMHWYDxpt2uXyXxs4RAtcK1McS8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://try.vikunja.io/api/v1/lists/10",
+					"protocol": "https",
+					"host": [
+						"try",
+						"vikunja",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"lists",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get - просмотр содержимого текущей задачи - /tasks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthbGlub3ZzY2thamEuZWxlbmFAeWFuZGV4LnJ1IiwiZW1haWxSZW1pbmRlcnNFbmFibGVkIjpmYWxzZSwiZXhwIjoxNjU3NzE5ODA2LCJpZCI6OCwiaXNMb2NhbFVzZXIiOnRydWUsImxvbmciOmZhbHNlLCJuYW1lIjoiIiwidHlwZSI6MSwidXNlcm5hbWUiOiJsZW5rYWxpbm92c2theWFhIn0.YwOim0jojW9AGKHsqMHWYDxpt2uXyXxs4RAtcK1McS8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://try.vikunja.io/api/v1/tasks/13",
+					"protocol": "https",
+					"host": [
+						"try",
+						"vikunja",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"tasks",
+						"13"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
